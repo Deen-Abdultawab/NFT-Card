@@ -1,0 +1,177 @@
+/* General */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+:root {
+
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
+p {
+  margin-bottom: 1.5rem;
+  max-width: 30em;
+}
+
+body {
+  background-color: var(--main-bg);
+  font-weight: 400;
+  line-height: 1.75;
+  font-family: 'outfit', cursive;
+  font-size: 16px;
+}
+
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.svg img {
+  width: 1.25rem;
+  display: block;
+}
+
+
+.main-container {
+  
+  width: 23.438rem;
+  max-width: 90rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding: 1.875rem;
+  border-radius: 0.9rem;
+  background: var(--card-bg);
+ 
+}
+
+/* NFT Image Styles */
+
+.nft-image {
+  margin-bottom: 1.5rem;
+  display: grid;
+}
+
+.nft {
+  border-radius: 0.8rem;
+}
+
+/* Overlay Image  */
+
+.overlay-img {
+  background: hsl(178, 100%, 50%, 0.4);
+  position: relative;
+  margin-top: -100%;
+  border-radius: 0.8rem;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.overlay-img > img {
+  width: 6.25rem;
+}
+
+.overlay-img:hover {
+  opacity: 1;
+}
+
+/* NFT Card Detail Styles */
+.nft-title {
+  font-size: 1.2rem;
+  color: var(--White);
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.nft-title:hover {
+  color: var(--Cyan);
+}
+
+.nft-text {
+  color: var(--Soft-blue);
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+/* NFT Price and Bid Time */
+
+.nft-info {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 1.25rem;
+}
+
+.price-info, .bid-info {
+  cursor: pointer;
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.eth-logo img {
+  width: 0.8125rem;
+}
+
+.price-info span {
+  color:var(--Cyan);
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.bid-info span {
+  color:var(--Soft-blue);
+}
+
+/* NFT Author Info */
+
+.author-info {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.author-info img {
+  width: 2.5rem;
+  border: 1px solid var(--White);
+  border-radius: 50%;
+}
+
+.author-info h4 {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color:var(--Soft-blue);
+  font-weight: lighter;
+}
+
+.name a {
+  color: var(--White);
+  text-decoration: none;
+  transition: all 0.3s linear;
+}
+
+.name a:hover {
+  color: var(--Cyan);
+}
